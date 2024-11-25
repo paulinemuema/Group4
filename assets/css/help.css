@@ -1,0 +1,67 @@
+/* General Help Page Styling */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .help-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .help-intro h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff6347;
+    margin-bottom: 1rem;
+  }
+  
+  .help-intro p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #b0b0b0;
+  }
+  
+  /* FAQ Styling */
+  .help-faq h2 {
+    font-size: 2em;
+    color: #ff6347;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #444;
+  }
+  
+  .faq-answer {
+    padding: 15px;
+    margin-top: 5px;
+    display: none;
+    font-size: 1em;
+    color: #b0b0b0;
+    background-color: #232323;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,80 @@
+/* Base styles for the appetizers section */
+.appetizers {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.appetizers .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center; /* Center text for headings and paragraphs */
+}
+
+.appetizers h2 {
+    font-size: 2.5rem; /* Large heading */
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark text color */
+}
+
+.appetizers p {
+    font-size: 1.2rem; /* Slightly larger font for description */
+    color: #666; /* Gray text color */
+    margin-bottom: 40px; /* Space below paragraph */
+}
+
+.appetizer-list {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to new lines on smaller screens */
+    justify-content: center; /* Center items in the container */
+}
+
+.appetizer-item {
+    background-color: #fff; /* White background for each item */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    margin: 10px; /* Space between items */
+    width: 300px; /* Fixed width for consistency */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+}
+
+.appetizer-item:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.appetizer-item h3 {
+    font-size: 1.5rem; /* Size for the appetizer name */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space below name */
+}
+
+.appetizer-item p {
+    font-size: 1rem; /* Size for the appetizer description */
+    color: #444; /* Slightly darker gray for description */
+    margin-bottom: 10px; /* Space below description */
+}
+
+.appetizer-item .price {
+    font-size: 1.2rem; /* Size for the price */
+    color: #e91e63; /* Color for the price, e.g., pink */
+    font-weight: bold; /* Bold text for price */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block; /* Make the button an inline block */
+    padding: 10px 20px; /* Inner spacing */
+    font-size: 1rem; /* Font size */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Primary button color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}

@@ -1,0 +1,86 @@
+/* Chef Section Styles */
+.chef-section {
+    padding: 60px 0;
+    background-color: #000; /* Black background color */
+    text-align: center;
+}
+
+.chef-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.chef-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chef-item {
+    position: relative;
+    overflow: hidden;
+    background: #333; /* Dark background for each chef item */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    width: 90%; /* Reduce width of each chef item */
+    max-width: 250px; /* Limit maximum width */
+    margin: 0 auto; /* Center align */
+}
+
+.chef-item:hover {
+    transform: scale(1.05);
+}
+
+.chef-image {
+    width: 100%; /* Image fills the container width */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Chef Info Styling - Hidden by Default */
+.chef-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.3s, visibility 0.3s;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Show the info on hover */
+.chef-item:hover .chef-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.chef-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.chef-title {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.chef-bio {
+    font-size: 1rem;
+    color: #ddd;
+}
